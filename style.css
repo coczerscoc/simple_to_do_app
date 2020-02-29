@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Yeon Sung';
+    color: white;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+button {
+    padding: 13px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    background: 0;
+    transition: .2s;
+    font-size: 1.2em;
+}
+
+.btn_warning {
+    background-color: rgb(249, 127, 81);
+}
+
+.btn_warning:hover {
+    background-color: rgb(247, 156, 126);
+}
+
+.btn_danger {
+    background-color: red;
+}
+
+.btn_danger:hover {
+    background-color: rgb(216, 96, 96);
+}
+
+.button_list {
+    text-align: right;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    transition: .2s;
+}
+
+hr {
+    margin-top: 15px;
+    border: 1px solid white;
+    opacity: 0.2;
+}
+
+li {
+    list-style: none;
+    font-size: 19px;
+    color: white;
+    padding: 15px;
+}
+
+.ul_category {
+    margin-left: 45px;
+    transition: .3s;
+}
+
+li:hover {
+    cursor: pointer;
+    transition: .5s;
+}
+
+.list-active {
+    font-weight: bold;
+    color: #5352ed;
+}
+
+.middle_element {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-column-gap: 40px;
+    margin: 0 0 0 200px;
+}
+
+.far {
+    color: white;
+    font-size: 28px;
+    margin: 10px 25px 10px 10px;
+    vertical-align: middle;
+}
+
+.fa-plus {
+    margin-left: 25px;
+}
+
+/* For banner */
+
+.big_banner {
+    text-align: center;
+    color: white;
+    padding: 50px;
+    margin: 0 0 30px 0;
+}
+
+/* For category list  */
+
+.list_item {
+    border-radius: 10px;
+    background-color: rgba(27, 156, 252, 0.9);
+}
+
+.input_category {
+    color: white;
+    padding: 10px 10px 10px 0;
+    background: transparent;
+    outline: none;
+    font-size: 18px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin: 20px 20px 20px 15px;
+    width: 50%;
+}
+
+/* .list_item ul {
+} */
+
+/* For children list */
+.parent_app {
+    color: white;
+    border-radius: 10px;
+    background: rgba(31, 211, 85, 0.7);
+    margin: 0 500px 0 15px;
+}
+
+.category_title {
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(38, 117, 207);
+}
+
+.title_bar {
+    background-color: rgb(39, 161, 121);
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* .parent_app ul {
+    padding: 10px;
+} */
+
+.parent_title {
+    justify-self: center;
+}
+
+.parent_task_remaining {
+    justify-self: start;
+    font-size: 14px;
+    padding: 5px 0 0 0;
+}
+
+.data_parent_input {
+    color: white;
+    padding: 10px 10px 10px 0;
+    background: transparent;
+    outline: none;
+    font-size: 18px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    margin: 20px 20px 20px 15px;
+    width: 50%;
+}
+
+.input_category:focus ,.data_parent_input:focus {
+    animation: changeBorder .3s forwards;
+}
+
+.task_incomplete {
+    color: white;
+    font-size: 21px;
+}
+
+.task_complete {
+    text-decoration: line-through;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.task_circle_unchecked {
+    display: block;
+    transform: scale(0);
+    animation: slowFadeUnchecked .7s alternate-reverse;
+}
+
+.task_circle_checked {
+    transform: scale(1);
+    animation: slowFadeChecked .7s alternate-reverse;
+}
+
+@keyframes slowFadeChecked {
+    0% { transform: scale(0); }
+    20% { transform: scale(0.2); }
+    40% { transform: scale(0.4); }
+    60% { transform: scale(0.6); }
+    80% { transform: scale(0.8); }
+    100% { transform: scale(1); }
+}
+
+@keyframes slowFadeUnchecked {
+    0% { transform: scale(1); }
+    20% { transform: scale(0.8); }
+    40% { transform: scale(0.6); }
+    60% { transform: scale(0.4); }
+    80% { transform: scale(0.2); }
+    100% 
+    { 
+        transform: scale(0); 
+        display: none;
+    }
+ }
+
+ @keyframes changeBorder {
+     0% {
+        width: 0%;
+        border-bottom: 3px solid white;
+     }
+
+     20% {
+         width: 10%;
+         border-bottom: 3px solid white;
+     }
+
+     40% {
+        width: 20%;
+        border-bottom: 3px solid white;
+    }
+
+     60% {
+         width: 30%;
+         border-bottom: 3px solid white;
+     }
+
+     80% {
+        width: 40%;
+        border-bottom: 3px solid white;
+     }
+
+     100% {
+        width: 50%;
+        border-bottom: 3px solid white;
+     }
+ }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Federant|Yeon+Sung&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6204fff83b.js" crossorigin="anonymous"></script>
+    <script src="./script.js" defer></script>
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <div class="big_banner">
+        <h1>To-Do List App</h1>
+    </div>
+    <div class="middle_element">
+        <div class="list_item">
+            <div class="category_title">
+                <h2>Categories</h2>
+            </div>
+            <ul class="ul_category" data-list></ul><br>
+            <form data-item-form>
+                <i class="fas fa-plus"></i><input type="text" class="input_category" placeholder="Add new category..." data-item-name><br>
+            </form>
+            <div class="button_list">
+                <button class="btn_clear btn_warning" data-delete-list>Delete Selected Category</button>
+                <button class="btn_clear btn_danger" data-clear-list>Clear ALL</button>
+            </div>
+            <p data-example></p>
+        </div>
+        <div class="parent_app">
+            <div class="title_bar">
+                <div class="parent_title"><h2 data-task-title>dwdwd</h2></div>
+                <div class="parent_task_remaining"><p data-task-remaining></p></div>
+            </div>
+            <ul data-task-app></ul><br>
+            <form data-task-form>
+                <i class="fas fa-plus"></i><input type="text" class="data_parent_input" placeholder="Add new task..." data-task-input>
+            </form>
+        </div>
+    </div>
+</body>
+
+<template id="template_tasks">
+    <li></li>
+</template>
+</html>
